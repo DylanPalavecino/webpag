@@ -159,6 +159,8 @@ header li:hover{
     align-items: center;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
     gap: 1rem;
     position: fixed;
     top: 100px;
