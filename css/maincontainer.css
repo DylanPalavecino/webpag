@@ -1,0 +1,182 @@
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+/* VIDEO INDEX */
+
+.vid-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    max-height: 1000px;
+    padding-bottom: 10px; 
+}
+
+.video-nvidia {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: fill; 
+    aspect-ratio: 16 / 9;
+}
+
+/*CARROUSEL PRODUCTOS DE OFERTAS */
+
+.productos-ofertas{
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+.producto-categoria{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.productos-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.productos-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card-producto{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+    
+}
+
+.producto-imagen{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.etq-descuento{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    color: green;
+    border-radius: 5px;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    opacity: 0;
+}
+.card-btn:hover {
+    opacity: 1;
+    background-color: #39ec28;
+    color: #fff;
+}
+.info-producto{
+    width: 100%;
+    padding-top: 5px;
+}
+.nombre-producto{
+    text-transform: uppercase;
+}
+.producto-descripcion{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.precio{
+    font-weight: 900;
+    font-size: 20px;
+
+}
+.precio-actual{
+    text-decoration: line-through;
+    opacity: 0.5;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUARY */
+@media (max-width: 1024px) {
+    .vid-container {
+        max-height: 600px; 
+    }
+    .video-nvidia {
+        max-height: 600px;
+    } 
+}
+
+@media (max-width: 768px) {
+    .vid-container {
+        max-height: 400px; 
+    }
+    .video-nvidia {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vid-container {
+        max-height: 300px; 
+    }
+    .video-nvidia {
+        max-height: 300px;
+    }
+}
+@media screen and (max-width:800px) {
+
+    .section-content{
+        flex-direction: column;
+    } 
+}
